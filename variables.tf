@@ -15,7 +15,7 @@ variable "subnet_ocids"         { type = list(string) }
 variable "shape"                { type = string }
 variable "ssh_public_keys" {
   type        = list(string)
-  default = "test"
+  default = ["ssh-rsa", "AAAAB3"]
 }
 variable "instance_count" { 
     type = number
